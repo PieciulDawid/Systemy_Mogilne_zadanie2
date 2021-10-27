@@ -1,3 +1,17 @@
 <resources>
-    <string name="app_name">PS_2</string>
+    <string name="app_name">        Quiz - Trudne słówka</string>
+    <string name="button_true">     Prawda</string>
+    <string name="button_flase">    Fałsz</string>
+    <string name="button_next">     Następne</string>
+    <string name="pytanie1">        Abdykacją nazwiemy rezygnację z przysługującej władzy?</string>
+    <string name="pytanie2">        Bajaderkę możemy zjeść ze smakiem?</string>
+    <string name="pytanie3">        Carpaccio to włoska przystawka, przygotowana z surowego mięsa?</string>
+    <string name="pytanie4">        Dachowcem nazwiemy kota?</string>
+    <string name="pytanie5">        Ekslibris mżesz znaleźć w ksiażce?</string>
+    <string name="pytanie6">        Fircyk jest osobą dojrzałą i stonowaną?</string>
+    <string name="pytanie7">        Gastrolog przyjmie pacjenta z bólem uszu?</string>
+    <string name="pytanie8">        Hungarysta jest specjalistą w zakresie języka czeskiego?</string>
+    <string name="pytanie9">        Czy konstantynopolitańczykowianeczka jest prawdziwym słowem?</string>
+    <string name="correct_answer">  Poprawna odpowiedź</string>
+    <string name="incorrect_answer">Niepoprawna odpowiedź</string>
 </resources>
