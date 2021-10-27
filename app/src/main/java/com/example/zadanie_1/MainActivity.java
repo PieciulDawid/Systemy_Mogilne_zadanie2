@@ -2,6 +2,7 @@ package com.example.zadanie_1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -13,9 +14,11 @@ public class MainActivity extends AppCompatActivity {
 
     private static final String QUIZ_TAG = "MainActivity";
     private static final String KEY_CURRENT_INDEX = "currentIndex";
+    public static final String KEY_EXTRA_ANSWER = "com.example.zadanie_1.PromptActivity.correctAnswer";
     private Button trueButton;
     private Button falaseButton;
     private Button nextButton;
+    private Button promptButton;
     private TextView questionTextView;
     private Question[] questions = new Question[]{
             new Question(R.string.pytanie1, true),
@@ -64,6 +67,7 @@ public class MainActivity extends AppCompatActivity {
         trueButton       = findViewById(R.id.true_button);
         falaseButton     = findViewById(R.id.false_button);
         nextButton       = findViewById(R.id.next_button);
+        promptButton     = findViewById(R.id.prompt_Button);
         questionTextView = findViewById(R.id.question_text_view);
         setNextQuestion();
         trueButton.setOnClickListener(new View.OnClickListener() {
@@ -85,6 +89,19 @@ public class MainActivity extends AppCompatActivity {
                 setNextQuestion();
             }
         });
+        promptButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick (View v) {
+                promptButton.setOnClickListener((a) -> {
+                    Intent intent = new Intent(MainActivity.this, PromptActivity.class);
+                    boolean correctAnswer = questions[currentIndex].isTrueAnswer();
+                    intent.putExtra(KEY_EXTRA_ANSWER, correctAnswer);
+                    startActivity(intent);
+                });
+            }
+        });
+
+
     }
 
     @Override

@@ -3,6 +3,7 @@
     <string name="button_true">     Prawda</string>
     <string name="button_flase">    Fałsz</string>
     <string name="button_next">     Następne</string>
+    <string name="button_answer">   Pokaż odpowiedź</string>
     <string name="pytanie1">        Abdykacją nazwiemy rezygnację z przysługującej władzy?</string>
     <string name="pytanie2">        Bajaderkę możemy zjeść ze smakiem?</string>
     <string name="pytanie3">        Carpaccio to włoska przystawka, przygotowana z surowego mięsa?</string>
@@ -14,4 +15,7 @@
     <string name="pytanie9">        Czy konstantynopolitańczykowianeczka jest prawdziwym słowem?</string>
     <string name="correct_answer">  Poprawna odpowiedź</string>
     <string name="incorrect_answer">Niepoprawna odpowiedź</string>
+    <string name="czy_na_pewno_chcesz_zobaczy_odpowied">Czy na pewno chcesz zobaczyć odpowiedź?</string>
+    <string name="podpowied">Podpowiedź</string>
+
 </resources>

@@ -47,10 +47,23 @@
         android:layout_height="wrap_content"
         android:padding="10dp"
         />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
     <Button
         android:id="@+id/next_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/button_next" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/prompt_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/podpowied" />
 
 </LinearLayout>
