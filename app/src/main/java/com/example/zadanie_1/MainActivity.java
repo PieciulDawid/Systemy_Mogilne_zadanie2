@@ -11,9 +11,8 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-
-
     private static final String QUIZ_TAG = "MainActivity";
+    private static final String KEY_CURRENT_INDEX = "currentIndex";
     private Button trueButton;
     private Button falaseButton;
     private Button nextButton;
@@ -45,11 +44,22 @@ public class MainActivity extends AppCompatActivity {
     private void setNextQuestion(){
         questionTextView.setText(questions[currentIndex].getQuestionId());
     }
+    @Override
+    protected void onSaveInstanceState(Bundle outState){
+        super.onSaveInstanceState(outState);
+        Log.d(QUIZ_TAG, "Wywołana została metoda cyklu życia: onSaveInstanceState");
+        outState.putInt(KEY_CURRENT_INDEX, currentIndex);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Log.d(QUIZ_TAG, "Wywołana została metoda cyklu życia: onCreate");
+        setContentView(R.layout.activity_main);
+        if(savedInstanceState != null){
+            currentIndex = savedInstanceState.getInt(KEY_CURRENT_INDEX);
+        }
+
         setContentView(R.layout.activity_main);
         trueButton       = findViewById(R.id.true_button);
         falaseButton     = findViewById(R.id.false_button);
