@@ -89,16 +89,11 @@ public class MainActivity extends AppCompatActivity {
                 setNextQuestion();
             }
         });
-        promptButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick (View v) {
-                promptButton.setOnClickListener((a) -> {
-                    Intent intent = new Intent(MainActivity.this, PromptActivity.class);
-                    boolean correctAnswer = questions[currentIndex].isTrueAnswer();
-                    intent.putExtra(KEY_EXTRA_ANSWER, correctAnswer);
-                    startActivity(intent);
-                });
-            }
+        promptButton.setOnClickListener((v) -> {
+            Intent intent = new Intent(MainActivity.this, PromptActivity.class);
+            boolean correctAnswer = questions[currentIndex].isTrueAnswer();
+            intent.putExtra(KEY_EXTRA_ANSWER, correctAnswer);
+            startActivity(intent);
         });
 
 
