@@ -17,5 +17,6 @@
     <string name="incorrect_answer">Niepoprawna odpowiedź</string>
     <string name="czy_na_pewno_chcesz_zobaczy_odpowied">Czy na pewno chcesz zobaczyć odpowiedź?</string>
     <string name="podpowied">Podpowiedź</string>
+    <string name="answer_was_shown">Oszukujesz! Odpowiedź była już wyświetlona.</string>
 
 </resources>
