@@ -1,0 +1,27 @@
+Włączenie aplikacji
+
+2021-10-27 17:03:45.272 9076-9076/com.example.zadanie_1 D/MainActivity: Wywołana została metoda cyklu życia: onCreate
+2021-10-27 17:03:45.390 9076-9076/com.example.zadanie_1 D/MainActivity: Wywołana została metoda cyklu życia: onStart
+2021-10-27 17:03:45.390 9076-9076/com.example.zadanie_1 D/MainActivity: Wywołana została metoda cyklu życia: onResume
+
+Nastepne pytanie (Nic się nie stało)
+Obrót 
+
+2021-10-27 17:04:29.018 9076-9076/com.example.zadanie_1 D/MainActivity: Wywołana została metoda cyklu życia: onPause
+2021-10-27 17:04:29.019 9076-9076/com.example.zadanie_1 D/MainActivity: Wywołana została metoda cyklu życia: onStop
+2021-10-27 17:04:29.019 9076-9076/com.example.zadanie_1 D/MainActivity: Wywołana została metoda cyklu życia: onDestroy
+2021-10-27 17:04:29.033 9076-9076/com.example.zadanie_1 D/MainActivity: Wywołana została metoda cyklu życia: onCreate
+2021-10-27 17:04:29.066 9076-9076/com.example.zadanie_1 D/MainActivity: Wywołana została metoda cyklu życia: onStart
+2021-10-27 17:04:29.066 9076-9076/com.example.zadanie_1 D/MainActivity: Wywołana została metoda cyklu życia: onResume
+
+Wróciło pierwsze pytanie
+
+Przejscie do ekranu głównego
+
+2021-10-27 17:05:40.726 9076-9076/com.example.zadanie_1 D/MainActivity: Wywołana została metoda cyklu życia: onPause
+2021-10-27 17:05:41.161 9076-9076/com.example.zadanie_1 D/MainActivity: Wywołana została metoda cyklu życia: onStop
+
+Powrót do aplikacji
+
+2021-10-27 17:06:16.114 9076-9076/com.example.zadanie_1 D/MainActivity: Wywołana została metoda cyklu życia: onStart
+2021-10-27 17:06:16.114 9076-9076/com.example.zadanie_1 D/MainActivity: Wywołana została metoda cyklu życia: onResume
